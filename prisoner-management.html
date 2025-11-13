@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Prisoners</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="prisoner-container">
+        <h1>Prisoner Management</h1>
+
+        <div id="prisonerList">
+            <ul id="prisonerListUL"></ul>
+        </div>
+
+        <h2>Add New Prisoner</h2>
+        <form id="addPrisonerForm">
+            <input type="text" id="prisonerName" placeholder="Prisoner's Name" required>
+            <input type="file" id="prisonerPhoto" accept="image/*" required>
+            <button type="submit">Add Prisoner</button>
+        </form>
+
+        <script src="https://www.gstatic.com/firebasejs/9.4.1/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/9.4.1/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/9.4.1/firebase-database.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/9.4.1/firebase-storage.js"></script>
+        <script src="js/firebase-config.js"></script>
+        <script src="js/prisoner.js"></script>
+    </div>
+</body>
+</html>
